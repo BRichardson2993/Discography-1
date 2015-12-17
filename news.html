@@ -3,6 +3,8 @@
   <head>
   <meta charset="utf-8">
   <meta name="description" content="BMTH Band Website">
+  <link href='https://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
   
   <title>Bring Me The Horizon</title>
   <link rel="stylesheet" href="css/base.css">
@@ -25,38 +27,44 @@
         </ul>
         </nav>
       <div id="col2" class="span7">
+      	<div id="news">
       <p> Want to be updated on what is going on with Bring Me the Horizon? Fill out the form below to reveive updates on new albums, tracks, tour dates, and more!</p>
-        <form class="span6 left">
+      <form>
+        <div class="span6 left">
   First name:<br>
-  <input type="text" name="firstname" placeholder="Your First Name"><br>
+  <input type="text" name="firstname" placeholder="Your First Name" required><br>
   Last name:<br>
-  <input type="text" name="lastname" placeholder="Your Last Name"><br>
+  <input type="text" name="lastname" placeholder="Your Last Name" required><br>
   Address:<br>
-  <input type="text" name="address" placeholder="Address"><br>
+  <input type="text" name="address" placeholder="Address" required><br>
   City:<br>
-  <input type="text" name="city" placeholder="City"><br>
+  <input type="text" name="city" placeholder="City" required><br>
   State:<br>
-  <input type="text" name="state" placeholder="State">
-</form>
-<form class="span6 right">
+  <input type="text" name="state" placeholder="State" required>
+</div><!-- span6 left-->
+<div class="span6 right">
   Zip Code:<br>
-  <input type="text" name="zipcode" placeholder="Zip Code"><br>
+  <input type="text" name="zipcode" placeholder="Zip Code" required><br>
   Birthday:<br>
-  <input type="text" name="birthday" placeholder="Birthday"><br>
+  <input type="text" name="birthday" placeholder="Birthday" required><br>
   E-mail Address:<br>
-  <input type="text" name="email" placeholder="E-mail Address"><br>
+  <input type="text" name="email" placeholder="E-mail Address" required><br>
   Additional Comments:<br>
-  <textarea name="Additional Comments"  placeholder="Send us a nice message!"></textarea>
+  <textarea name="Additional Comments"  placeholder="Send us a nice message!"></textarea><br>
+  <button type="submit" value="submit">Submit!</button>
+</div><!-- span6 left-->
 </form>
-      
+      </div><!--news-->
         </div><!--COL2-->
 
 
 
 
 
-      <footer>
-        a
+
+
+      <footer class="span5">
+        &copy; 2015 <br> Made by Sarah Persechino
       </footer>
         </body>
   </html>
