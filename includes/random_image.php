@@ -18,7 +18,7 @@ $images = [
 	 'caption'=>	'Water basin at Ryoanji temple, Kyoto'],
 ];
 $i = rand(0, count ($images)-1);
-$selectedImage = "images/{$images[$i]['file']}.jpg";
+$selectedImage = "images/{$images[$i]['file']}.jpeg";
 $caption = $images[$i]['caption'];
 if (file_exists($selectedImage) && is_readable($selectedImage)) {
 	$imageSize = getimagesize($selectedImage);
