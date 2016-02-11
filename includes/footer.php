@@ -1,7 +1,7 @@
-<footer>
+<footer class="span5">
 	<p>&copy;
 		<?php 
-		$startYear = 2006;
+		$startYear = 2015;
 		$thisYear = date('Y');
 		if ($startYear == $thisYear) {
 			echo $startYear;
@@ -9,5 +9,5 @@
 			echo "{$startYear}&ndash;{$thisYear}";
 		}
 	?>
-			David Powers</p>
+			<br>Made by Sarah Persechino</p>
 </footer>
