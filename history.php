@@ -17,14 +17,13 @@
 		<h1>Bring Me The Horizon</h1>
 	</header>
 	<nav>
-		<ul>
-			<li class="current"><a href="history.html">History</a></li>
-			<li><a href="albums.html">Albums</a></li>
-			<li><a href="tracks.html">Tracks</a></li>
-			<li><a href="members.html">Members</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="sources.html">Sources</a></li>
-		</ul>
+		<?php $file = './includes/menu.php';
+			if (file_exists($file) && is_readable($file)) {
+					require $file;
+			} else {
+					throw new Exception("$file can't be found");
+			}
+			?>
 	</nav>
 	<div id="col2">
 		<img src="images/bandmembers.jpeg" alt="Band members">

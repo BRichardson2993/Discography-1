@@ -22,14 +22,13 @@
 	</div>
 	<!--COL1-->
 	<nav class="right span7">
-		<ul>
-			<li class="hidden"><a href="history.html">History</a></li>
-			<li class="current"><a href="albums.html">Albums</a></li>
-			<li><a href="tracks.html">Tracks</a></li>
-			<li><a href="members.html">Members</a></li>
-			<li><a href="news.html">News</a></li>
-			<li><a href="sources.html">Sources</a></li>
-		</ul>
+		<?php $file = './includes/menu.php';
+			if (file_exists($file) && is_readable($file)) {
+					require $file;
+			} else {
+					throw new Exception("$file can't be found");
+			}
+			?>
 	</nav>
 	<div id="col2" class="span7">
 		<div class="album">
