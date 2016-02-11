@@ -1,2 +1,0 @@
-# Discography
-Band Website Repository
